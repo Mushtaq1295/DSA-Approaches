@@ -1,0 +1,140 @@
+# Algorithm Patterns Cheat Sheet
+
+---
+
+## 1. Sliding Window
+
+**When to use:** Arrays or strings with a fixed or dynamic range (subarrays, substrings).
+**Trick:** Keep a “window” and update sum, frequency, or counts as it moves.
+**Common problems:** Subarray sum, longest substring without repeating characters.
+**Example:** Find the maximum sum of any subarray of length `k`.
+
+---
+
+## 2. Two Pointers
+
+**When to use:** Sorted arrays, linked lists, or problems comparing two elements.
+**Trick:** Start from both ends (or different points) and move inward/outward depending on conditions.
+**Common problems:** Pair sum, merging, reversing linked list, removing duplicates.
+**Example:** Given a sorted array, find if there exists a pair that sums to `target`.
+
+---
+
+## 3. Fast & Slow Pointers (Floyd’s Cycle)
+
+**When to use:** Detecting cycles in linked lists/graphs, finding midpoints.
+**Trick:** One pointer moves twice as fast — they’ll meet if a cycle exists.
+**Common problems:** Linked list cycle detection, happy number, middle of linked list.
+**Example:** Detect if a linked list has a cycle.
+
+---
+
+## 4. Prefix Sum / Cumulative Sum
+
+**When to use:** Range sum queries, subarray problems.
+**Trick:** Precompute prefix sums for O(1) query of any range.
+**Common problems:** Subarray sum equals K, matrix region sum, balanced subarray.
+**Example:** Given an array, quickly compute sum of elements between indices `i` and `j`.
+
+---
+
+## 5. Hashing / Hash Maps
+
+**When to use:** Fast lookup, frequency counting, avoiding nested loops.
+**Trick:** Store counts or last seen indices in a hash map.
+**Common problems:** Two-sum, anagrams, group anagrams, subarray with sum K.
+**Example:** Find indices of two numbers that add up to `target`.
+
+---
+
+## 6. Backtracking
+
+**When to use:** Permutations, subsets, recursive state exploration.
+**Trick:** Explore all possibilities, prune invalid states early.
+**Common problems:** N-Queens, word search, subsets, Sudoku solver.
+**Example:** Generate all subsets of an array.
+
+---
+
+## 7. Binary Search
+
+**When to use:** Sorted arrays, search-based optimization problems.
+**Trick:** Use condition checks instead of exact target matching.
+**Variants:** Leftmost/rightmost occurrence, binary search on real numbers, monotonic function search.
+**Common problems:** Search in rotated array, find peak element, allocate minimum pages.
+**Example:** Find the square root of a number up to 6 decimal precision.
+
+---
+
+## 8. Greedy Algorithms
+
+**When to use:** Optimization problems (min/max), often with sorted data.
+**Trick:** Always make the locally optimal choice — prove it’s globally optimal.
+**Common problems:** Jump game, interval scheduling, coin change (when greedy works).
+**Example:** Schedule maximum number of non-overlapping meetings.
+
+---
+
+## 9. Dynamic Programming (DP)
+
+**When to use:** Optimal substructure + overlapping subproblems.
+**Trick:** Memoize recursive calls or build bottom-up DP table.
+**Variants:** 1D DP, 2D DP, tree DP, bitmask DP.
+**Common problems:** Fibonacci, edit distance, LIS, 0/1 knapsack.
+**Example:** Find minimum number of coins to make a given amount.
+
+---
+
+## 10. Union-Find (Disjoint Set)
+
+**When to use:** Connectivity problems, detecting cycles in graphs.
+**Trick:** Use parent pointers + path compression + union by rank.
+**Common problems:** Number of islands (with DSU), Kruskal’s MST, connected components.
+**Example:** Detect if adding an edge creates a cycle in a graph.
+
+---
+
+## 11. Topological Sort
+
+**When to use:** Scheduling tasks with dependencies (DAGs).
+**Trick:** Use in-degree array (Kahn’s algorithm) or DFS with visited states.
+**Common problems:** Course schedule, task ordering.
+**Example:** Determine if all courses can be finished given prerequisites.
+
+---
+
+## 12. Trie (Prefix Tree)
+
+**When to use:** Efficient word prefix/suffix queries.
+**Trick:** Each node represents a character; paths represent words.
+**Common problems:** Autocomplete, word search, longest common prefix.
+**Example:** Insert words into a Trie and search for a given prefix.
+
+---
+
+## 13. Graph Traversals (BFS & DFS)
+
+**When to use:** Maze solving, pathfinding, connectivity.
+**Trick:** BFS → shortest path, DFS → explore deeply. Always use visited set.
+**Common problems:** Number of islands, flood fill, shortest path in grid.
+**Example:** Find shortest path in an unweighted graph using BFS.
+
+---
+
+## 14. Monotonic Stack / Queue
+
+**When to use:** Next/previous greater/smaller element problems.
+**Trick:** Maintain increasing/decreasing stack or queue to optimize.
+**Common problems:** Stock span, daily temperatures, largest rectangle in histogram.
+**Example:** Find the next greater element for every array element.
+
+---
+
+## 15. Bit Manipulation
+
+**When to use:** Problems involving bits, XOR, powers of two, subsets.
+**Trick:** Use bitwise tricks like `x & (x - 1)` to test power of two.
+**Common problems:** Single number, subset generation, bitmask DP.
+**Example:** Generate all subsets of a set using bitmasking.
+
+---
